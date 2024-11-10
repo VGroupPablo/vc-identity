@@ -13,6 +13,7 @@ const appSlice = createSlice({
 	initialState,
 	reducers: {
 		setDisplay: (state, action: PayloadAction<boolean>) => {
+			console.log('New State:', {state.display})
 			state.display = action.payload;
 		},
 	},
